@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+       <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+       <!--xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+                        <!--http://www.springframework.org/schema/beans/spring-beans.xsd">-->
+    <!--
+    3.3.2IOC中bean标签和管理对象细节
+        bean标签：用于配置让spring创建对象，并且存入ioc容器之中
+        id属性：对象的唯一标识。
+        class属性：指定要创建对象的全限定类名
+    -->
+
+    <!--<bean id="accountService" class="spring02ioc.service.impl.IAccountServiceImpl"/>-->
+    <!--<bean id="accountDao" class="spring02ioc.dao.impl.AccountDaoImpl"/>-->
+    <!--
+        3.3.2.1 bean标签
+            作用：用于配置对象让spring来创建的。默认情况下它调用的是类中的无参构造函数。
+            如果没有无参构造函数则不能创建成功。
+        属性：
+            id：给对象在容器中提供一个唯一标识。用于获取对象。
+            class：指定类的全限定类名。用于反射创建对象。默认情况下调用无参构造函数。
+            scope：指定对象的作用范围。* singleton:默认值，
+            单例的.* prototype:多例的.* request:WEB项目中,Spring创建一个Bean的对象,
+            将对象存入到request域中.* session:WEB项目中,Spring创建一个Bean的对象,
+            将对象存入到session域中.* globalsession:WEB项目中,应用在Portlet环境.
+            如果没有Portlet环境那么globalSession相当于session.init-method：指定类中的初始化方法名称。
+            destroy-method：指定类中销毁方法名称。
+    -->
+    <!--
+    3.3.2.2 bean的作用范围和生命周期
+        单例对象：scope="singleton"
+        一个应用只有一个对象的实例。它的作用范围就是整个引用。
+        生命周期：
+            对象出生：当应用加载，创建容器时，对象就被创建了。
+            对象活着：只要容器在，对象一直活着。
+            对象死亡：当应用卸载，销毁容器时，对象就被销毁了。
+        多例对象：scope="prototype"每次访问对象时，都会重新创建对象实例。
+        生命周期：
+            对象出生：当使用对象时，创建新的对象实例。
+            对象活着：只要对象在使用中，就一直活着。
+            对象死亡：当对象长时间不用时，被java的垃圾回收器回收了。
+    -->
+    <!--
+    第二种方式：spring管理静态工厂-使用静态工厂的方法创建对象
+    此种方式是:
+    使用StaticFactory类中的静态方法createAccountService创建对象，并存入spring容器
+    id属性：指定bean的id，用于从容器中获取
+    class属性：指定静态工厂的全限定类名
+    factory-method属性：指定生产对象的静态方法-->
+    <bean id="accountServiceFactory" class="spring02ioc.factory.StaticFactory" factory-method="createAS">
+    </bean>
+    <!--此种方式是：先把工厂的创建交给spring来管理。然后在使用工厂的bean来调用里面的方法factory-bean属性：用于指定实例工厂bean的id。factory-method属性：用于指定实例工厂中创建对象的方法。-->
+    <bean id="instanceFactory" class="spring02ioc.factory.InstanceFactory">
+    </bean>
+    <bean id="accountService" factory-bean="instanceFactory" factory-method="creatAS">
+    </bean>
+
+    <!--DI部分-->
+    <!--使用构造方法DI-->
+    <bean id="account" class="spring03di.service.impl.AccountServiceImpl">
+        <constructor-arg name="name" value="zhansgan"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="birthday" ref="now"/>
+    </bean>
+    <bean id="now" class="java.util.Date"/>
+
+    <!--set方法注入-->
+    <bean id="accountSet" class="spring03di.service.impl.ImplUseGetSet">
+        <property name="name" value="李四" />
+        <property name="age" value="20" />
+        <property name="birthday" ref="now" />
+    </bean>
+
+    <!--使用P名称控件注入数据本质调用set方法-->
+    <bean id="accountNamespace" class="spring03di.service.impl.ImplNamespaceP"
+        p:name="Namespace" p:birthday-ref="now" p:age="18" />
+
+    <!--
+    注入集和数据List结构
+    List结构的:
+        array, list, set
+    map:
+        map, entry, props, prop
+    -->
+    <bean id="DIListAccount" class="spring03di.DIList.impl.IASImpl">
+        <!--在注入集合数据时，只要结构相同，标签可以互换-->
+        <!--给数组注入数据-->
+        <property name="myStrs">
+            <set>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </set>
+        </property>
+        <!--注入list集合数据-->
+        <property name="myList">
+            <array>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </array>
+        </property>
+        <!--注入set集合数据-->
+        <property name="mySet">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </list>
+        </property>
+        <!--注入Map集合数据-->
+        <property name="myMap">
+            <props>
+                <prop key="testA">AAA</prop>
+                <prop key="testB">BBB</prop>
+                <prop key="testC">CCC</prop>
+            </props>
+        </property>
+        <!--注入properties数据-->
+        <property name="myProps">
+            <map>
+                <entry key="testA" value="aaa" />
+                <entry key="testB">
+                    <value>bbb</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <!--ioc CRUD operator-->
+    <!--配置service-->
+    <bean id="accountServiceCrud" class="spring04ioc_crud.service.impl.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao" />
+    </bean>
+    <!--配置Dao-->
+    <bean id="accountDao" class="spring04ioc_crud.dao.impl.AccountDaoImpl">
+        <property name="accountMapper" ref="accountMapper" />
+    </bean>
+    <!--配置mapper-->
+    <bean id="accountMapper" class="spring04ioc_crud.mapper.impl.AccountMapperImpl" />
+</beans>
