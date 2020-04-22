@@ -19,7 +19,11 @@
     <!-- 配置数据源 -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/excercise"/>
+        <!--
+            如果报错加上
+            ?serverTimezone=UTC
+        -->
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/excercise?serverTimezone=UTC"/>
         <property name="user" value="root"/>
         <property name="password" value="root"/>
     </bean>

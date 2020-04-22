@@ -18,7 +18,7 @@ import java.util.List;
 public class AccountServiceTest {
 
     @Autowired
-    private  IAccountService as;
+    private IAccountService as;
 
     @Test
     public void testFindAll() {
