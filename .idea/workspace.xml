@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="675708c0-a7db-445d-b850-cb2c88c7d926" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="675708c0-a7db-445d-b850-cb2c88c7d926" name="Default Changelist" comment="分化项目">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -98,7 +98,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="3" />
+          <entry key="gitignore" value="5" />
           <entry key="java" value="36" />
           <entry key="txt" value="17" />
           <entry key="xml" value="183" />
@@ -106,7 +106,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Git file" value="3" />
+          <entry key="Git file" value="5" />
           <entry key="JAVA" value="36" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="XML" value="183" />
@@ -153,8 +153,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="146">
-                  <caret line="22" selection-start-line="22" selection-end-line="22" />
+                <state relative-caret-position="95">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
                 </state>
               </provider>
             </entry>
@@ -358,7 +358,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/spring/spring06-xml-ioc/src/main/java/spring06_xml_ioc/service/impl/AccountServiceImpl.java&#10;D:/IdeaProjects/ssm-tutorial/spring/spring06-xml-ioc/src/main/java/spring06_xml_ioc/service/AccountSevice.java" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587561485276" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587561516927" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last.edited.regexp" value="asdasd" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -403,7 +403,7 @@
       <workItem from="1587298742120" duration="620000" />
       <workItem from="1587299505825" duration="13000" />
       <workItem from="1587299572625" duration="10000" />
-      <workItem from="1587557929987" duration="3549000" />
+      <workItem from="1587557929987" duration="3581000" />
     </task>
     <task id="LOCAL-00001" summary="分化项目">
       <created>1587558423412</created>
@@ -440,11 +440,18 @@
       <option name="project" value="LOCAL" />
       <updated>1587561469624</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="分化项目">
+      <created>1587561497896</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587561497896</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4192000" />
+    <option name="totallyTimeSpent" value="4224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="1" width="1883" height="998" extended-state="0" />
@@ -629,8 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
