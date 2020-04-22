@@ -14,8 +14,8 @@
         <module name="spring03-di" />
         <module name="spring04-ioc-crud" />
         <module name="spring05-bean" />
-        <module name="spring05-proxy" />
-        <module name="spring06xml-ioc" />
+        <module name="spring06-xml-ioc" />
+        <module name="spring07-proxy" />
         <module name="spring_day02" />
       </profile>
     </annotationProcessing>

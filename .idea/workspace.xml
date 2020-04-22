@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="675708c0-a7db-445d-b850-cb2c88c7d926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/spring01-decoupling/spring01-decoupling.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/spring02-ioc-factory/spring02-ioc-factory.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/spring03-di/spring03-di.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/spring04-ioc-crud/spring04-ioc-crud.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/spring05-bean/spring05-bean.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/tutorial-assets/spring_day02/day02_eesy_02account_xmlioc/day02_eesy_02account_xmlioc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/tutorial-assets/spring_day02/spring_day02.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,6 +38,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="exclude" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="iml" value="1" />
           <entry key="xml" value="4" />
@@ -54,6 +46,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Git exclude file" value="1" />
           <entry key="Git file" value="1" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="XML" value="4" />
@@ -61,12 +54,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="2" />
           <entry key="txt" value="10" />
           <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Git file" value="2" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="XML" value="8" />
         </counts>
@@ -96,20 +91,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="42" column="25" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="42" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="103">
+              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -174,6 +160,68 @@
               <item name="ssm-tutorial" type="462c0819:PsiDirectoryNode" />
               <item name="mybaties" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ssm-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring06-xml-ioc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring06-xml-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring06-xml-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring06-xml-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring06-xml-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring06_xml_ioc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring06-xml-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring06-xml-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -184,7 +232,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587558564652" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587558695536" />
     <property name="last.edited.regexp" value="asdasd" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -228,7 +276,7 @@
       <workItem from="1587298742120" duration="620000" />
       <workItem from="1587299505825" duration="13000" />
       <workItem from="1587299572625" duration="10000" />
-      <workItem from="1587557929987" duration="613000" />
+      <workItem from="1587557929987" duration="731000" />
     </task>
     <task id="LOCAL-00001" summary="分化项目">
       <created>1587558423412</created>
@@ -237,17 +285,24 @@
       <option name="project" value="LOCAL" />
       <updated>1587558423413</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="分化项目">
+      <created>1587558580901</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587558580901</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1256000" />
+    <option name="totallyTimeSpent" value="1374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="4" width="1214" height="998" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2670753" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41243434" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -256,6 +311,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="JRebel Executor" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -312,17 +368,24 @@
     <entry file="file://$PROJECT_DIR$/spring/spring01-decoupling/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="42" column="25" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="42" selection-end-column="25" />
+        <state relative-caret-position="190">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/.git/info/exclude">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
         </state>
       </provider>
     </entry>

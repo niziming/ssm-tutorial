@@ -29,3 +29,5 @@ spring/target/test-classes/
 spring/tutorial-assets/spring_day02/day02_eesy_02account_xmlioc/.idea/inspectionProfiles/
 spring/tutorial-assets/spring_day02/day02_eesy_02account_xmlioc/target/generated-sources/
 spring/tutorial-assets/spring_day02/day02_eesy_02account_xmlioc/target/generated-test-sources/
+spring/spring07-proxy/src/test/
+spring/spring07-proxy/target/generated-sources/
