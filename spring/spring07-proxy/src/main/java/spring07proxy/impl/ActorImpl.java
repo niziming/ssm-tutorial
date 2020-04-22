@@ -1,6 +1,6 @@
-package spring05proxy.impl;
+package spring07proxy.impl;
 
-public class ActorImpl implements spring05proxy.Actor {
+public class ActorImpl implements spring07proxy.Actor {
 
     @Override
     public void basicAct(float money) {

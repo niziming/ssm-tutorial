@@ -32,4 +32,8 @@ public class AccountDaoImpl implements AccountDao {
     public void deleteAccount(Integer acccountId) {
 
     }
+    public void setQueryRunner(QueryRunner queryRunner) {
+        this.queryRunner = queryRunner;
+    }
+
 }

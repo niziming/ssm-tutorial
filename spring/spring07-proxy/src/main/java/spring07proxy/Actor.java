@@ -1,4 +1,4 @@
-package spring05proxy;
+package spring07proxy;
 
 public interface Actor {
     public void basicAct(float money);

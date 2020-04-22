@@ -1,6 +1,6 @@
-package spring05proxy;
+package spring07proxy;
 
-import spring05proxy.impl.ActorImpl;
+import spring07proxy.impl.ActorImpl;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

@@ -20,7 +20,6 @@ spring/spring04-ioc-crud/target/generated-sources/
 spring/spring04-ioc-crud/target/generated-test-sources/
 spring/spring05-bean/src/test/
 spring/spring05-bean/target/generated-sources/
-spring/spring06-xml-ioc/src/main/java/spring06_xml_ioc/service/
 spring/spring06-xml-ioc/src/test/
 spring/spring07-proxy/spring06-proxy.iml
 spring/spring07-proxy/src/test/
