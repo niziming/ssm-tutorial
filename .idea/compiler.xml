@@ -6,9 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="day02_eesy_02account_xmlioc" />
         <module name="mybaties" />
-        <module name="spring" />
         <module name="spring-mvc" />
+        <module name="spring01-decoupling" />
+        <module name="spring02-ioc-factory" />
+        <module name="spring03-di" />
+        <module name="spring04-ioc-crud" />
+        <module name="spring05-bean" />
+        <module name="spring05-proxy" />
+        <module name="spring06xml-ioc" />
+        <module name="spring_day02" />
       </profile>
     </annotationProcessing>
   </component>
