@@ -3,6 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <artifactId>spring</artifactId>
+    <name>spring</name>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <build>
         <plugins>
             <plugin>
@@ -15,6 +19,16 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>tutorial-assets/spring_day02</module>
+        <module>spring01-decoupling</module>
+        <module>spring02-ioc-factory</module>
+        <module>spring03-di</module>
+        <module>spring04-ioc-crud</module>
+        <module>spring05-bean</module>
+        <module>spring06-proxy</module>
+        <module>spring06-xml-ioc</module>
+    </modules>
 
     <parent>
         <groupId>cn.ziming</groupId>
@@ -23,11 +37,19 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>spring</artifactId>
-    <name>spring</name>
-    <version>1.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <!--版本号-->
+    <properties>
+        <!--<mysql.version>8.0.17</mysql.version>-->
+    </properties>
+
+    <!--依赖-->
     <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 </project>

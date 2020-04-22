@@ -11,11 +11,5 @@
         <module name="spring-mvc" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="9">
-      <module name="mybaties" target="1.5" />
-      <module name="spring" target="9" />
-      <module name="spring-mvc" target="1.5" />
-      <module name="ssm-tutorial" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
