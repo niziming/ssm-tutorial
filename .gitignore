@@ -7,36 +7,56 @@
 *.iml
 out
 gen
-#.gitignore
-#spring/spring01-decoupling/src/main/resources/
-#spring/spring01-decoupling/src/test/
-#spring/spring01-decoupling/target/generated-sources/
-#spring/spring02-ioc-factory/src/test/
-#spring/spring02-ioc-factory/target/generated-sources/
-#spring/spring03-di/src/test/
-#spring/spring03-di/target/generated-sources/
-#spring/spring04-ioc-crud/target/generated-sources/
-#spring/spring04-ioc-crud/target/generated-test-sources/
-#spring/spring05-bean/src/test/
-#spring/spring05-bean/target/generated-sources/
-#spring/spring06-xml-ioc/src/test/
-#spring/spring07-proxy/spring06-proxy.iml
-#spring/spring07-proxy/src/test/
-#spring/spring07-proxy/target/generated-sources/
-#spring/target/classes/spring05proxy/
-#spring/target/generated-sources/
-#spring/target/generated-test-sources/
-#spring/target/test-classes/
-#spring/tutorial-assets/spring_day02/day02_eesy_02account_xmlioc/target/generated-sources/
-#spring/tutorial-assets/spring_day02/day02_eesy_02account_xmlioc/target/generated-test-sources/
-#spring/spring06-xml-ioc/target/
-#spring/spring04-bean/target/generated-sources/
-#spring/spring05-anno-ioc/src/test/
-#spring/spring05-anno-ioc/target/generated-sources/
-#spring/spring07-annoioc-crud/target/generated-sources/
-#spring/spring07-annoioc-crud/target/generated-test-sources/
-#spring/spring08-anno-ioc-withoutxml/target/
-#spring/target/classes/
-#spring/tutorial-assets/day02_eesy_04account_annoioc_withoutxml/src/test/java/com/itheima/service/
-#spring/tutorial-assets/day02_eesy_04account_annoioc_withoutxml/target/generated-sources/
-#spring/tutorial-assets/day02_eesy_04account_annoioc_withoutxml/target/generated-test-sources/
+
+# .gitignore
+# spring/spring01-decoupling/src/main/resources/
+# spring/spring01-decoupling/src/test/
+# spring/spring01-decoupling/target/generated-sources/
+# spring/spring02-ioc-factory/src/test/
+# spring/spring02-ioc-factory/target/generated-sources/
+# spring/spring03-di/src/test/
+# spring/spring03-di/target/generated-sources/
+# spring/spring04-ioc-crud/target/generated-sources/
+# spring/spring04-ioc-crud/target/generated-test-sources/
+# spring/spring05-bean/src/test/
+# spring/spring05-bean/target/generated-sources/
+# spring/spring06-xml-ioc/src/test/
+# spring/spring07-proxy/spring06-proxy.iml
+# spring/spring07-proxy/src/test/
+# spring/spring07-proxy/target/generated-sources/
+# spring/target/classes/spring05proxy/
+# spring/target/generated-sources/
+# spring/target/generated-test-sources/
+# spring/target/test-classes/
+# spring/tutorial-assets/spring_day02/day02_eesy_02account_xmlioc/target/generated-sources/
+# spring/tutorial-assets/spring_day02/day02_eesy_02account_xmlioc/target/generated-test-sources/
+# spring/spring06-xml-ioc/target/
+# spring/spring04-bean/target/generated-sources/
+# spring/spring05-anno-ioc/src/test/
+# spring/spring05-anno-ioc/target/generated-sources/
+# spring/spring07-annoioc-crud/target/generated-sources/
+# spring/spring07-annoioc-crud/target/generated-test-sources/
+# spring/spring08-anno-ioc-withoutxml/target/
+# spring/target/classes/
+# spring/tutorial-assets/day02_eesy_04account_annoioc_withoutxml/src/test/java/com/itheima/service/
+# spring/tutorial-assets/day02_eesy_04account_annoioc_withoutxml/target/generated-sources/
+# spring/tutorial-assets/day02_eesy_04account_annoioc_withoutxml/target/generated-test-sources/
+# spring/spring01-decoupling/src/main/resources/
+# spring/spring01-decoupling/src/test/
+# spring/spring01-decoupling/target/generated-sources/
+# spring/spring02-ioc-factory/src/test/
+# spring/spring02-ioc-factory/target/generated-sources/
+# spring/spring03-di/src/test/
+# spring/spring03-di/target/generated-sources/
+# spring/spring04-bean/target/generated-sources/
+# spring/spring05-anno-ioc/src/test/
+# spring/spring05-anno-ioc/target/generated-sources/
+# spring/spring06-xml-ioc/src/test/
+# spring/spring06-xml-ioc/target/
+# spring/spring07-annoioc-crud/target/generated-sources/
+# spring/spring07-annoioc-crud/target/generated-test-sources/
+# spring/spring08-anno-ioc-withoutxml/target/
+# spring/target/
+# spring/tutorial-assets/day02_eesy_04account_annoioc_withoutxml/src/test/java/com/itheima/service/
+# spring/tutorial-assets/day02_eesy_04account_annoioc_withoutxml/target/generated-sources/
+# spring/tutorial-assets/day02_eesy_04account_annoioc_withoutxml/target/generated-test-sources/
