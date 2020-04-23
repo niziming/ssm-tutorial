@@ -22,4 +22,10 @@ public class AccountServiceImplTest {
         List<Account> allAccount = accountService.findAllAccount();
         System.out.println(allAccount);
     }
+
+    @Test
+    public void findAccountById() {
+        Account accountById = accountService.findAccountById(1);
+        System.out.println(accountById);
+    }
 }

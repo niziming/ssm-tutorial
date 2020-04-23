@@ -1,5 +1,6 @@
 package spring08_anno_ioc_withoutxml.dao.impl;
 
+import org.apache.commons.dbutils.handlers.BeanHandler;
 import spring08_anno_ioc_withoutxml.dao.AccountDao;
 import spring08_anno_ioc_withoutxml.domain.Account;
 import org.apache.commons.dbutils.QueryRunner;
@@ -28,7 +29,13 @@ public class AccountDaoImpl implements AccountDao {
 
     @Override
     public Account findAccountById(Integer accountId) {
-        return null;
+        Account query = null;
+        try {
+            query = queryRunner.query("select * from account where id=?", new BeanHandler<>(Account.class), accountId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return query;
     }
 
     @Override

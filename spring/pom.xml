@@ -29,7 +29,6 @@
         <module>spring07-annoioc-crud</module>
         <module>spring08-anno-ioc-withoutxml</module>
         <module>spring10-proxy</module>
-        <module>tutorial-assets/day02_eesy_04account_annoioc_withoutxml</module>
     </modules>
 
     <parent>
