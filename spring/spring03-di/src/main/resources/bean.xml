@@ -47,7 +47,7 @@
 
     <!--DI部分-->
     <!--使用构造方法DI-->
-    <bean id="account" class="spring03di.service.impl.AccountServiceImpl">
+    <bean id="account" class="spring03di.spring08_anno_ioc_withoutxml.service.impl.AccountServiceImpl">
         <constructor-arg name="name" value="zhansgan"/>
         <constructor-arg name="age" value="18"/>
         <constructor-arg name="birthday" ref="now"/>
@@ -55,14 +55,14 @@
     <bean id="now" class="java.util.Date"/>
 
     <!--set方法注入-->
-    <bean id="accountSet" class="spring03di.service.impl.ImplUseGetSet">
+    <bean id="accountSet" class="spring03di.spring08_anno_ioc_withoutxml.service.impl.ImplUseGetSet">
         <property name="name" value="李四" />
         <property name="age" value="20" />
         <property name="birthday" ref="now" />
     </bean>
 
     <!--使用P名称控件注入数据本质调用set方法-->
-    <bean id="accountNamespace" class="spring03di.service.impl.ImplNamespaceP"
+    <bean id="accountNamespace" class="spring03di.spring08_anno_ioc_withoutxml.service.impl.ImplNamespaceP"
         p:name="Namespace" p:birthday-ref="now" p:age="18" />
 
     <!--

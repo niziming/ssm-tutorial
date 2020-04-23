@@ -5,6 +5,18 @@ public class Account {
     private String name;
     private Float money;
 
+    public Account(String name, Float money) {
+        this.name = name;
+        this.money = money;
+    }
+    public Account(Integer id, String name, Float money) {
+        this.id = id;
+        this.name = name;
+        this.money = money;
+    }
+    public Account() {
+    }
+
     public Integer getId() {
         return id;
     }

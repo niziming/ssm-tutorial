@@ -1,6 +1,7 @@
 package spring06_xml_ioc.dao.impl;
 
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import spring06_xml_ioc.dao.AccountDao;
 import spring06_xml_ioc.domain.Account;
@@ -24,22 +25,38 @@ public class AccountDaoImpl implements AccountDao {
 
     @Override
     public Account findAccountById(Integer accountId) {
-        return null;
+        try{
+            return queryRunner.query("select * from account where id = ? ",new BeanHandler<Account>(Account.class),accountId);
+        }catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     public void saveAccount(Account account) {
-
+        try {
+            queryRunner.update("insert into account(name,money)values(?,?)", account.getName(), account.getMoney());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void updateAccount(Account account) {
-
+        try {
+            queryRunner.update("update account set name=?, money=? where id=?", account.getName(), account.getMoney(), account.getId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void deleteAccount(Integer acccountId) {
-
+        try {
+            queryRunner.update("delete from account where id=?", acccountId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
     public void setQueryRunner(QueryRunner queryRunner) {
         this.queryRunner = queryRunner;

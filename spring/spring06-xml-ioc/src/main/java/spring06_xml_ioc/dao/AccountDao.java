@@ -1,5 +1,6 @@
 package spring06_xml_ioc.dao;
 
+
 import spring06_xml_ioc.domain.Account;
 
 import java.util.List;

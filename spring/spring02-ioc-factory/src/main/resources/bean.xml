@@ -7,5 +7,5 @@
     <!--此种方式是：先把工厂的创建交给spring来管理。然后在使用工厂的bean来调用里面的方法factory-bean属性：用于指定实例工厂bean的id。factory-method属性：用于指定实例工厂中创建对象的方法。-->
     <bean id="instanceFactory" class="spring02ioc.factory.InstanceFactory" />
     <bean id="accountService" factory-bean="instanceFactory" factory-method="creatAS"/>
-    <bean id="accountDao" class="spring02ioc.spring04ioc_crud.dao.impl.AccountDaoImpl"/>
+    <bean id="accountDao" class="spring02ioc.spring04ioc_crud.spring08_anno_ioc_withoutxml.dao.impl.AccountDaoImpl"/>
 </beans>
