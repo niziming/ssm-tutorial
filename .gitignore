@@ -3,12 +3,11 @@
 ### Example user template
 
 # IntelliJ project files
-.idea
-target
+.idea/
+target/
 *.iml
 out
 gen
-
 # .gitignore
 # spring/spring01-decoupling/src/main/resources/
 # spring/spring01-decoupling/src/test/
