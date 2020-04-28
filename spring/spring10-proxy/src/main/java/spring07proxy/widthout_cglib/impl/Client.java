@@ -1,6 +1,4 @@
-package spring07proxy;
-
-import spring07proxy.impl.ActorImpl;
+package spring07proxy.widthout_cglib.impl;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

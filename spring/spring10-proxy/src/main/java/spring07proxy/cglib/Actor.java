@@ -1,6 +1,6 @@
-package spring07proxy.impl;
+package spring07proxy.cglib;
 
-public class ActorImpl implements spring07proxy.Actor {
+public class Actor implements spring07proxy.widthout_cglib.impl.Actor {
 
     @Override
     public void basicAct(float money) {
