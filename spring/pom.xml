@@ -28,12 +28,13 @@
         <module>spring06-xml-ioc</module>
         <module>spring07-annoioc-crud</module>
         <module>spring08-anno-ioc-withoutxml</module>
+        <module>spring09-aop-account</module>
         <module>spring10-proxy</module>
     </modules>
 
     <parent>
         <groupId>cn.ziming</groupId>
-        <artifactId>dependencies</artifactId>
+        <artifactId>ssm-tutorial</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
