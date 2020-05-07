@@ -30,6 +30,9 @@
         <module>spring08-anno-ioc-withoutxml</module>
         <module>spring09-aop-account</module>
         <module>spring10-proxy</module>
+        <module>spring11-aop</module>
+        <module>spring12-anno-aop</module>
+        <module>spring13-jdbc-template</module>
     </modules>
 
     <parent>
@@ -47,6 +50,25 @@
 
     <!--依赖-->
     <dependencies>
+        <!--xml切面配置需要的依赖 @Aspect-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        <!--JdbcTemplate-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!--事物相关-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
