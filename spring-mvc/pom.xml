@@ -11,4 +11,8 @@
     
     <artifactId>spring-mvc</artifactId>
 
+    <modules>
+        <module>springmvc-01</module>
+        <module>springmvc_day01_01_start</module>
+    </modules>
 </project>

@@ -20,6 +20,7 @@
         </plugins>
     </build>
     <modules>
+        <module>jdk1.8</module>
         <module>spring01-decoupling</module>
         <module>spring02-ioc-factory</module>
         <module>spring03-di</module>
@@ -33,6 +34,9 @@
         <module>spring11-aop</module>
         <module>spring12-anno-aop</module>
         <module>spring13-jdbc-template</module>
+        <module>spring14-aop-transaction-anno</module>
+        <module>spring15-aop-transaction-anno-withoutxml</module>
+        <module>spring16-account-transaction</module>
     </modules>
 
     <parent>
