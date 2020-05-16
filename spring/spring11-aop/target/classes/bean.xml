@@ -20,7 +20,8 @@
         <!--配置切面 -->
         <aop:aspect ref="logger">
             <!-- 配置通知的类型，并且建立通知方法和切入点方法的关联-->
-            <aop:before method="printLog" pointcut-ref="cutPoint"/>
+            <!--<aop:before method="printLog" pointcut-ref="cutPoint"/>-->
+            <aop:around method="aroundPringLog" pointcut-ref="cutPoint" />
         </aop:aspect>
     </aop:config>
     <!--
@@ -64,5 +65,5 @@
                实际开发中切入点表达式的通常写法：
                    切到业务层实现类下的所有方法
                        * com.itheima.service.impl.*.*(..)
-        -->
+    -->
 </beans>
