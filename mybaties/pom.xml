@@ -11,5 +11,8 @@
 
     <artifactId>mybaties</artifactId>
 
+    <dependencies>
+
+    </dependencies>
 
 </project>

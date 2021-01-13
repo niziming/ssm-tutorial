@@ -65,6 +65,13 @@ public class Account implements Serializable{
         this.user = user;
     }
 */
+    public static void main(String[] args) {
+        String s = Integer.toBinaryString((byte)-10);
+        // String s1 = Integer.toBinaryString(-10);
+        System.out.println(s);
+        // System.out.println(s1);
+        // System.out.println(s1.length());
+    }
 
     @Override
     public String toString() {
