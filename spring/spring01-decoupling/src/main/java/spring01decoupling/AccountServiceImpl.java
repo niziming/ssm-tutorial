@@ -9,7 +9,7 @@ import java.sql.*;
  * 这种编译期依赖关系应该在我们开发中杜绝.
  *
  */
-public class AccountServiceImpl implements IAccountService {
+class AccountServiceImpl implements IAccountService {
     private IAccountService ad = new AccountServiceImpl();
 
     /**
@@ -19,7 +19,7 @@ public class AccountServiceImpl implements IAccountService {
      */
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         //1.注册驱动
-        // DriverManager.registerDriver(new com.mysql.spring01decoupling.Driver());
+        DriverManager.registerDriver(new com.mysql.jdbc.Driver());
         // Class.forName("com.mysql.jdbc.Driver");
         Class.forName("com.mysql.cj.jdbc.Driver");
         //2.获取连接

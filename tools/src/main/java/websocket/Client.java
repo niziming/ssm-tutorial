@@ -1,5 +1,5 @@
 package websocket;
 
-public class WS {
+public class Client {
     
 }
