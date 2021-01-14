@@ -1,5 +1,6 @@
 package spring02ioc.service.impl;
 
+import org.springframework.context.annotation.Bean;
 import spring02ioc.dao.impl.AccountDaoImpl;
 import spring02ioc.dao.IAccountDao;
 import spring02ioc.service.IAccountService;

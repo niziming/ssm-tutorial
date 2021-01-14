@@ -16,6 +16,18 @@ public class AccountServiceImpl implements AccountService {
         this.birthday = birthday;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
     @Override
     public void saveAccount() {
         System.out.println(name + age + birthday);

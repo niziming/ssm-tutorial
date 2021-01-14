@@ -1,4 +1,4 @@
-package spring03di.DIList;
+package spring03di.DISet;
 
 public interface IAS {
     void saveAccount();

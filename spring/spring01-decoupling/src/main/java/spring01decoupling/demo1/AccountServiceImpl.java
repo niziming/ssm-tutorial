@@ -1,4 +1,4 @@
-package spring01decoupling;
+package spring01decoupling.demo1;
 
 import java.sql.*;
 

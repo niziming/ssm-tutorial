@@ -2,8 +2,8 @@ package spring03di.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import spring03di.DIList.IAS;
-import spring03di.DIList.impl.IASImpl;
+import spring03di.DISet.IAS;
+import spring03di.DISet.impl.IASImpl;
 
 import java.util.List;
 

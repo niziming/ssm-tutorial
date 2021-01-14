@@ -1,6 +1,6 @@
-package spring03di.DIList.impl;
+package spring03di.DISet.impl;
 
-import spring03di.DIList.IAS;
+import spring03di.DISet.IAS;
 
 import java.util.*;
 
