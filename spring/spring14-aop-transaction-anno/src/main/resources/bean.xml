@@ -24,7 +24,7 @@
     <!--配置aop-->
     <!--<aop:config>-->
         <!--&lt;!&ndash;配置通用切入点表达式&ndash;&gt;-->
-        <!--<aop:pointcut id="pt1" expression="execution(* com.itheima.service.impl.*.*(..))"></aop:pointcut>-->
+        <!--<aop:pointcut id="pt1" expression="execution(* com.ziming.spring.service.impl.*.*(..))"></aop:pointcut>-->
         <!--<aop:aspect id="txAdvice" ref="txManager">-->
             <!--&lt;!&ndash;配置前置通知：开启事务&ndash;&gt;-->
             <!--<aop:before method="beginTransaction" pointcut-ref="pt1"></aop:before>-->

@@ -3,15 +3,15 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="com.itheima.dao.IAccountDao">
+<mapper namespace="com.ziming.spring.dao.IAccountDao">
 	
 	<!-- 查询所有账户 -->
-	<select id="findAll" resultType="com.itheima.domain.Account">
+	<select id="findAll" resultType="com.ziming.domain.Account">
 		select * from account
 	</select>
 	
 	<!-- 新增账户 -->
-	<insert id="save" parameterType="com.itheima.domain.Account">
+	<insert id="save" parameterType="com.ziming.domain.Account">
 		insert into account(name,money) values(#{name},#{money});
 	</insert>
 </mapper>

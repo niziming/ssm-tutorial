@@ -4,11 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--配置service-->
-    <bean id="accountService" class="spring06_xml_ioc.service.impl.AccountServiceImpl">
+    <bean id="accountService" class="spring06_xml_ioc.spring.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"/>
     </bean>
     <!--配置Dao对象-->
-    <bean id="accountDao" class="spring06_xml_ioc.dao.impl.AccountDaoImpl">
+    <bean id="accountDao" class="spring06_xml_ioc.spring.dao.impl.AccountDaoImpl">
         <property name="queryRunner" ref="queryRunner"/>
     </bean>
     <!--配置QueryRunner-->

@@ -51,7 +51,7 @@ public class AccountDaoImpl implements AccountDao {
     @Override
     public void updateAccount(Account account) {
         try{
-            System.out.println("dao" + account);
+            System.out.println("spring.dao" + account);
             queryRunner.update(connectionUtils.getThreadConnection(),"update account set name=?,money=? where id=?",account.getName(),account.getMoney(),account.getId());
             System.out.println("保存用户成功");
         }catch (Exception e) {

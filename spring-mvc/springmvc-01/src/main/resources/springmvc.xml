@@ -35,7 +35,7 @@
     <!--使 用 <mvc:annotation-driven> 自动加载 RequestMappingHandlerMapping （处理映射器） 和-->
     <!--RequestMappingHandlerAdapter （ 处 理 适 配 器 ） ， 可 用 在 SpringMVC.xml 配 置 文 件 中 使 用-->
     <!--<mvc:annotation-driven>替代注解处理器和适配器的配置。-->
-    <mvc:annotation-driven conversion-service="conversionService"/>
+    <mvc:annotation-driven conversion-spring.service="conversionService"/>
     <!--它就相当于在 xml 中配置了：-->
     <!-- 上面的标签相当于 如下配置-->
     <!-- Begin -->

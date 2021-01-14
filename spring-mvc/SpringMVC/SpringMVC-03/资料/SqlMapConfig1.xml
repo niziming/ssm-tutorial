@@ -19,9 +19,9 @@
 	<!-- 引入映射配置文件 -->
 	<mappers>
 		<!--  
-		<mapper class="cn.itcast.dao.AccountDao"/>
-		<mapper class="cn.itcast.dao.UserDao"/>
+		<mapper class="cn.itcast.spring.dao.AccountDao"/>
+		<mapper class="cn.itcast.spring.dao.UserDao"/>
 		-->
-		<package name="cn.itcast.dao"/>
+		<package name="cn.itcast.spring.dao"/>
 	</mappers>
 </configuration>  

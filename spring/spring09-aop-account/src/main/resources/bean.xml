@@ -18,13 +18,13 @@
         <property name="transactionManager" ref="transactionManager"/>
     </bean>
     <!-- 配置Service -->
-    <bean id="accountService" class="spring09_aop_account.service.impl.AccountServiceImpl">
+    <bean id="accountService" class="spring09_aop_account.spring.service.impl.AccountServiceImpl">
         <!-- 注入dao -->
         <property name="accountDao" ref="accountDao" />
     </bean>
 
     <!--配置Dao对象-->
-    <bean id="accountDao" class="spring09_aop_account.dao.impl.AccountDaoImpl">
+    <bean id="accountDao" class="spring09_aop_account.spring.dao.impl.AccountDaoImpl">
         <!-- 注入QueryRunner -->
         <property name="queryRunner" ref="queryRunner" />
         <!-- 注入ConnectionUtils -->

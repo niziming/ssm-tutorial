@@ -1,4 +1,4 @@
-// package spring13_jdbc_template.dao.impl;
+// package spring13_jdbc_template.spring.dao.impl;
 //
 // import org.springframework.jdbc.core.JdbcTemplate;
 //

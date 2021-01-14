@@ -2,6 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ssm-tutorial</artifactId>
+        <groupId>cn.ziming</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <!--<relativePath></relativePath>&lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring</artifactId>
     <name>spring</name>
@@ -23,9 +30,11 @@
         <module>jdk1.8</module>
         <module>spring01-decoupling</module>
         <module>spring02-ioc-factory</module>
-        <module>spring03-di</module>
+        <module>spring03-spring</module>
         <module>spring04-bean</module>
-        <module>spring05-anno-ioc</module>
+        <module>spring05-di</module>
+        <module>spring06-anno-ioc</module>
+
         <module>spring06-xml-ioc</module>
         <module>spring07-annoioc-crud</module>
         <module>spring08-anno-ioc-withoutxml</module>
@@ -38,13 +47,6 @@
         <module>spring15-aop-transaction-anno-withoutxml</module>
         <module>spring16-account-transaction</module>
     </modules>
-
-    <parent>
-        <groupId>cn.ziming</groupId>
-        <artifactId>ssm-tutorial</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath /> <!-- lookup parent from repository -->
-    </parent>
 
     <!--版本号-->
     <properties>

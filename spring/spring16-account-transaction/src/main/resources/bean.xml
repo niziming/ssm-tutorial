@@ -4,12 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- 配置业务层-->
-    <bean id="accountService" class="spring16_account_transaction.service.impl.AccountServiceImpl">
+    <bean id="accountService" class="spring16_account_transaction.spring.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"/>
         <property name="transactionTemplate" ref="transactionTemplate"/>
     </bean>
     <!-- 配置账户的持久层-->
-    <bean id="accountDao" class="spring16_account_transaction.dao.impl.AccountDaoImpl">
+    <bean id="accountDao" class="spring16_account_transaction.spring.dao.impl.AccountDaoImpl">
         <property name="dataSource" ref="dataSource"/>
     </bean>
     <!--配置事务模板对象-->

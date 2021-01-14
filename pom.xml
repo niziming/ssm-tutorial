@@ -10,7 +10,7 @@
     <!--基本信息-->
     <description>Demo project for SSM Tutorial</description>
     <modelVersion>4.0.0</modelVersion>
-    <name>parent</name>
+    <name>ssm-tutorial</name>
     <packaging>pom</packaging>
 
     <!--模块声明-->
@@ -19,7 +19,6 @@
         <module>spring-mvc</module>
         <module>mybaties</module>
         <module>tools</module>
-        <module>spring-mvc</module>
     </modules>
 
     <!--版本号-->

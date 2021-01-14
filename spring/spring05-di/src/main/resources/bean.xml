@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 使用构造函数的方式，给 spring.service 中的属性传值
+    要求：
+    类中需要提供一个对应参数列表的构造函数。
+    涉及的标签：
+    constructor-arg
+    属性：
+    index:指定参数在构造函数参数列表的索引位置
+    type:指定参数在构造函数中的数据类型
+    name:指定参数在构造函数中的名称 用这个找给谁赋值
+    =======上面三个都是找给谁赋值，下面两个指的是赋什么值的==============
+    value:它能赋的值是基本数据类型和 String 类型
+    ref:它能赋的值是其他 bean 类型，也就是说，必须得是在配置文件中配置过的 bean
+    -->
+        <!--DI部分-->
+    <!--使用构造方法DI-->
+    <bean id="now" class="java.util.Date"/>
+    <bean id="as" class="di.service.impl.AccountServiceImpl">
+        <constructor-arg name="name" value="zhansgan"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="birthday" ref="now"/>
+    </bean>
+    <!--3.3.3.3 set 方法注入-->
+    <bean id="as1" class="di.service.impl.ImplUseGetSet">
+        <property name="name" value="hello"></property>
+        <property name="age" value="21"></property>
+        <property name="birthday" ref="now"></property>
+    </bean>
+    <!--3.3.3.4 使用 p 名称空间注入数据（本质还是调用 set 方法）-->
+    <bean id="as2"
+          class="di.service.impl.ImplNamespaceP"
+          p:name="tets"
+          p:age="22"
+          p:birthday-ref="now"
+    >
+    </bean>
+    <!--3.3.3.5 注入集合属性-->
+        <!-- 注入集合数据
+        List 结构的：
+        array,list,set
+        Map 结构的
+        map,entry,props,prop
+        -->
+    <bean id="as3" class="di.DISet.impl.IASImpl">
+        <!-- 在注入集合数据时，只要结构相同，标签可以互换 -->
+        <!-- 给数组注入数据 -->
+        <property name="myStrs">
+            <set>
+                <value>myStrs</value>
+                <value>myStrs</value>
+                <value>myStrs</value>
+            </set>
+        </property>
+        <!-- 注入 list 集合数据 -->
+        <property name="myList">
+            <array>
+                <value>myList</value>
+                <value>myList</value>
+                <value>myList</value>
+            </array>
+        </property>
+        <!-- 注入 set 集合数据 -->
+        <property name="mySet">
+            <list>
+                <value>mySet</value>
+                <value>mySet</value>
+                <value>mySet</value>
+            </list>
+        </property>
+        <!-- 注入 Map 数据 -->
+        <property name="myMap">
+            <props>
+                <prop key="test1">myList</prop>
+                <prop key="test2">myList</prop>
+                <prop key="test3">myList</prop>
+            </props>
+        </property>
+        <!-- 注入 properties 数据 -->
+        <property name="myProps">
+            <map>
+                <entry key="testA" value="aaa"></entry>
+                <entry key="testB">
+                    <value>bbb</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

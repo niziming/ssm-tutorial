@@ -21,6 +21,6 @@
 	
 	<!-- 指定映射文件位置 -->
 	<mappers>
-		<mapper class="com.itheima.dao.IAccountDao"/>
+		<mapper class="com.ziming.spring.dao.IAccountDao"/>
 	</mappers>
 </configuration>
