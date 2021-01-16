@@ -4,9 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--配置service-->
-    <bean id="accountService" class="spring02ioc.spring.service.impl.IAccountServiceImpl"></bean>
+    <bean id="accountService" class="spring02ioc.service.impl.IAccountServiceImpl"></bean>
     <!--配置dao-->
-    <bean id="accountDao" class="spring02ioc.spring.dao.impl.AccountDaoImpl"></bean>
+    <bean id="accountDao" class="spring02ioc.dao.impl.AccountDaoImpl"></bean>
     <!--
     id：给对象在容器中提供一个唯一标识。用于获取对象。
     class：指定类的全限定类名。用于反射创建对象。默认情况下调用无参构造函数。

@@ -23,12 +23,13 @@ class AccountServiceImpl implements IAccountService {
         // Class.forName("com.mysql.jdbc.Driver");
         Class.forName("com.mysql.cj.jdbc.Driver");
         //2.获取连接
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/excercise?serverTimezone=GMT%2B8", "root", "root");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/exercise?serverTimezone=GMT%2B8", "root", "root");
         // 3.获取预处理sql语句对象
         PreparedStatement pstm = conn.prepareStatement("select * from account");
         ResultSet resultSet = pstm.executeQuery();
         ResultSetMetaData metaData = resultSet.getMetaData();
         int columnCount = metaData.getColumnCount();
+        String columnName = metaData.getColumnName(1);
         while (resultSet.next()){
             for (int i = 1; i < columnCount; i++) {
                 System.out.print(resultSet.getString(i) + " ");

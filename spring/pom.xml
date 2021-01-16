@@ -6,7 +6,8 @@
         <artifactId>ssm-tutorial</artifactId>
         <groupId>cn.ziming</groupId>
         <version>1.0-SNAPSHOT</version>
-        <!--<relativePath></relativePath>&lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+        <!--relativePath表示将始终从父级仓库中获取，不从本地路径获取-->
+        <!--<relativePath/>&lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -14,33 +15,23 @@
     <name>spring</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>9</source>
-                    <target>9</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
     <modules>
-        <module>jdk1.8</module>
         <module>spring01-decoupling</module>
         <module>spring02-ioc-factory</module>
         <module>spring03-spring</module>
         <module>spring04-bean</module>
         <module>spring05-di</module>
         <module>spring06-anno-ioc</module>
-
+        <module>spring06-ioc-crud</module>
+        <module>spring06-ioc-crud</module>
         <module>spring06-xml-ioc</module>
-        <module>spring07-annoioc-crud</module>
-        <module>spring08-anno-ioc-withoutxml</module>
-        <module>spring09-aop-account</module>
-        <module>spring10-proxy</module>
-        <module>spring11-aop</module>
+        <module>spring08-config01</module>
+        <module>spring08-config02</module>
+        <module>spring09-aop01-transaction</module>
+        <module>spring09-aop02-dynamic-proxy</module>
+        <module>spring09-aop03-xml</module>
+        <module>spring09-aop04-anno</module>
         <module>spring12-anno-aop</module>
         <module>spring13-jdbc-template</module>
         <module>spring14-aop-transaction-anno</module>
@@ -115,6 +106,23 @@
             <version>1.3.2</version>
         </dependency>
 
-
+        <!--<dependency>-->
+        <!--    <groupId>#maven.org.slf4j</groupId>-->
+        <!--    <artifactId>log4j</artifactId>-->
+        <!--    <version>1.7.30</version>-->
+        <!--</dependency>-->
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>9</source>
+                    <target>9</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -3,8 +3,9 @@ package spring;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import spring.dao.IAccountDao;
-import spring.dao.impl.AccountDaoImpl;
+import spring.dao.IAccountDaoImpl;
 import spring.service.IAccountService;
+
 
 public class Main {
     /**
@@ -21,11 +22,11 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        new AccountDaoImpl().saveAccount();
+        new IAccountDaoImpl().saveAccount();
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
-        IAccountDao ad = ac.getBean("accountDao", IAccountDao.class);
-        IAccountService as = (IAccountService)ac.getBean("accountService");
-        as.saveAccount();
+        IAccountDao ad = ac.getBean("ad", IAccountDao.class);
         ad.saveAccount();
+        IAccountService as = (IAccountService)ac.getBean("as");
+        as.saveAccount();
     }
 }
