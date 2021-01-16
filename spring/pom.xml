@@ -6,7 +6,8 @@
         <artifactId>ssm-tutorial</artifactId>
         <groupId>cn.ziming</groupId>
         <version>1.0-SNAPSHOT</version>
-        <!--<relativePath></relativePath>&lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+        <!--relativePath表示将始终从父级仓库中获取，不从本地路径获取-->
+        <!--<relativePath/>&lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
