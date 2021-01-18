@@ -17,7 +17,11 @@
     <%--
         <a href="hello">入门程序</a>
     --%>
-    <a href="user/hello">RequestMapping注解</a>
-    <a href="/user/testReqMapping?username=user">RequestMapping注解</a>
+    <a href="${pageContext.request.contextPath}/hello">RequestMapping注解hello接口</a>
+    <br>
+    <a href="${pageContext.request.contextPath}/user/hello">RequestMapping/user/hello注解</a>
+    <br>
+    <h2>${pageContext.request.contextPath}</h2>
+</form>
 </body>
 </html>

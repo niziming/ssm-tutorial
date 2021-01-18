@@ -17,6 +17,7 @@
         <a href="hello">入门程序</a>
     --%>
 
+    <a href="/user/hello">user/hello</a>
     <a href="user/testRequestMapping?username=heihei">RequestMapping注解</a>
 
 </body>

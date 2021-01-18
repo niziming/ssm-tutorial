@@ -2,9 +2,8 @@ package ziming.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller
-@RequestMapping(path = "/user")
 /**
  * @RequestMapping 这个注释的作用
  * 类上：请求 URL 的第一级访问目录。
@@ -17,9 +16,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * params = {"moeny!100"}，表示请求参数中 money 不能是 100。
  * 以上四个属性只要出现 2 个或以上时，他们的关系是与的关系。
  */
+@Controller
+@RequestMapping
 public class HelloController {
-
-    @RequestMapping(path = "/hello")
+    @RequestMapping("/hello")
     public String sayHello () {
         System.out.println("hello string mvc");
         return "success";

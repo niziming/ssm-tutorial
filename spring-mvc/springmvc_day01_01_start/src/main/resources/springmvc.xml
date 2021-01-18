@@ -31,6 +31,6 @@
 
 
     <!-- 开启SpringMVC框架注解的支持 -->
-    <mvc:annotation-driven conversion-spring.service="conversionService"/>
+    <mvc:annotation-driven conversion-service="conversionService" />
 
 </beans>
