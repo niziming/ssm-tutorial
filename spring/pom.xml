@@ -17,101 +17,10 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring01-decoupling</module>
-        <module>spring02-ioc-factory</module>
-        <module>spring03-spring</module>
-        <module>spring04-bean</module>
-        <module>spring05-di</module>
-        <module>spring06-anno-ioc</module>
-        <module>spring06-ioc-crud</module>
-        <module>spring06-ioc-crud</module>
-        <module>spring06-xml-ioc</module>
-        <module>spring08-config01</module>
-        <module>spring08-config02</module>
-        <module>spring09-aop01-transaction</module>
-        <module>spring09-aop02-dynamic-proxy</module>
-        <module>spring09-aop03-xml</module>
-        <module>spring09-aop04-anno</module>
-        <module>spring12-anno-aop</module>
-        <module>spring13-jdbc-template</module>
-        <module>spring14-aop-transaction-anno</module>
-        <module>spring15-aop-transaction-anno-withoutxml</module>
-        <module>spring16-account-transaction</module>
+        <module>itcast-spring</module>
+        <module>kuangstudy-spring</module>
     </modules>
 
-    <!--版本号-->
-    <properties>
-        <mysql.version>8.0.17</mysql.version>
-        <spring.version>5.1.8.RELEASE</spring.version>
-    </properties>
-
-    <!--依赖-->
-    <dependencies>
-        <!--xml切面配置需要的依赖 @Aspect-->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.9.4</version>
-        </dependency>
-        <!--JdbcTemplate-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <!--事物相关-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-dbutils</groupId>
-            <artifactId>commons-dbutils</artifactId>
-            <version>1.7</version>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.17</version>
-        </dependency>
-
-        <dependency>
-            <groupId>c3p0</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>0.9.1.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-
-        <dependency>
-            <groupId>javax.annotation</groupId>
-            <artifactId>javax.annotation-api</artifactId>
-            <version>1.3.2</version>
-        </dependency>
-
-        <!--<dependency>-->
-        <!--    <groupId>#maven.org.slf4j</groupId>-->
-        <!--    <artifactId>log4j</artifactId>-->
-        <!--    <version>1.7.30</version>-->
-        <!--</dependency>-->
-    </dependencies>
 
     <build>
         <plugins>

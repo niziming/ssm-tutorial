@@ -12,7 +12,7 @@
     <artifactId>spring-mvc</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>springmvc-01</module>
+        <module>itcast-springmvc</module>
     </modules>
 
     <properties>

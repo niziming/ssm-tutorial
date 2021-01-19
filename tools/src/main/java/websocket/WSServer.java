@@ -37,7 +37,6 @@ public class WSServer {
     }
 
     @OnMessage
-
     public void onMessage(String message) throws IOException {
         JSONObject jsonObject = JSON.parseObject(message);
         String mes = (String) jsonObject.get("message");
@@ -72,13 +71,13 @@ public class WSServer {
 
     public static void main(String[] args) {
         WSServer ws = new WSServer();
-        JSONObject jo = new JSONObject();
-        jo.put("message", "这是后台返回的消息！");
-        jo.put("To", "test");
-        try {
-            ws.onMessage(jo.toString());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        //JSONObject jo = new JSONObject();
+        //jo.put("message", "这是后台返回的消息！");
+        //jo.put("To", "test");
+        //try {
+        //    ws.onMessage(jo.toString());
+        //} catch (IOException e) {
+        //    e.printStackTrace();
+        //}
     }
 }

@@ -1,0 +1,37 @@
+{
+  "ver":"WEB_ewferferfrf_v1.1",
+  "op":{
+    "mas":{
+      "interface1":"yst-mas-api",
+      "interface2":"yst-mas-api"
+    },
+    "oos":{
+      "interface1":"path",
+      "interface2":"path"
+    },
+    "cos":{
+      "interface1":"path",
+      "interface2":"path"
+    },
+    "vas":{
+      "interface1":"path",
+      "interface2":"path"
+    }
+
+  },
+
+  "opp":[
+    {
+      "name":"qrcodeurl",
+      "type":"url",
+      "default":"http://weferferg/ssss/index.html",
+      "desc":"手机扫码地址"
+    },
+    {
+      "name":"province",
+      "type":"string",
+      "default":"黑龙江",
+      "desc":"wefiufiubj"
+    }
+  ]
+}
