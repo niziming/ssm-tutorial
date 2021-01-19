@@ -42,4 +42,5 @@ public class User implements Serializable{
                 ", date=" + date +
                 '}';
     }
+
 }

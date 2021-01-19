@@ -22,4 +22,42 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
     <!-- 由SpringMVC拦截所有请求 -->
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+
+
+  <!--post 请求方式：-->
+  <!--在 web.xml 中配置一个过滤器-->
+  <!-- 配置 springMVC 编码过滤器 -->
+  <filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <!-- 设置过滤器中的属性值 -->
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+    <!-- 启动过滤器 -->
+    <init-param>
+      <param-name>forceEncoding</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <!-- 过滤所有请求 -->
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!--get 请求方式：-->
+  <!--tomacat 对 GET 和 POST 请求处理方式是不同的，GET 请求的编码问题，要改 tomcat 的 server.xml-->
+  <!--配置文件，如下：-->
+  <!--<Connector connectionTimeout="20000" port="8080"-->
+  <!--           protocol="HTTP/1.1" redirectPort="8443"/>-->
+  <!--改为：-->
+  <!--<Connector connectionTimeout="20000" port="8080"-->
+  <!--           protocol="HTTP/1.1" redirectPort="8443"-->
+  <!--           useBodyEncodingForURI="true"/>-->
+  <!--如果遇到 ajax 请求仍然乱码，请把：-->
+  <!--useBodyEncodingForURI="true"改为 URIEncoding="UTF-8"-->
+  <!--即可。-->
+
 </web-app>

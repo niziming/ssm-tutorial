@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Account implements Serializable{
-
+    private Integer id;
     private String username;
     private String password;
     private Double money;
@@ -14,6 +14,14 @@ public class Account implements Serializable{
 
     private List<User> list;
     private Map<String,User> map;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
