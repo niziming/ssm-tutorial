@@ -17,7 +17,7 @@
     <modules>
         <module>spring</module>
         <module>spring-mvc</module>
-        <module>mybaties</module>
+        <module>mybatis</module>
         <module>tools</module>
     </modules>
 
@@ -33,10 +33,34 @@
     </properties>
     <!--共有依赖管理-->
     <dependencies>
-
+        <!--测试包全局使用-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

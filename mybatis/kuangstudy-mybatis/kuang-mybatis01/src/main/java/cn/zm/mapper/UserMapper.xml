@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--绑定对接mapper接口-->
+<mapper namespace="cn.zm.mapper.UserMapper">
+    <select id="selectUser" resultType="cn.zm.domain.User">
+        select * from user
+    </select>
+    <select id="selectUserByid" resultType="User">
+        select * from user where id = #{id}
+    </select>
+    <select id="selectUserByNP" resultType="User">
+        select * from user where name = #{username} and pwd = #{pwd}
+    </select>
+    <select parameterType="map" id="selectUserByNP1" resultType="cn.zm.domain.User">
+        select * from user where name = #{username} and pwd = #{pwd}
+    </select>
+    <insert id="addUser" parameterType="User">
+        insert into user (id,name,pwd) values (#{id},#{name},#{pwd})
+    </insert>
+    <insert id="addUser1" parameterType="map">
+        insert into user (id,name,pwd) values (#{userid},#{username},#{passpwd})
+    </insert>
+    <update id="updateUser" parameterType="User">
+        update user set name=#{name}, pwd=#{pwd} where id=#{id}
+    </update>
+    <delete id="deleteById" parameterType="User">
+        delete from user where id=#{id}
+    </delete>
+    <select id="searchUser" resultType="User">
+        select * from user where name like "%"#{keyword}"%"
+    </select>
+</mapper>
