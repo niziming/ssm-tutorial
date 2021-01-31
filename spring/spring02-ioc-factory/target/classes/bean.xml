@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--配置service-->
+    <bean id="accountService" class="spring02ioc.service.impl.IAccountServiceImpl"></bean>
+    <!--配置dao-->
+    <bean id="accountDao" class="spring02ioc.dao.impl.AccountDaoImpl"></bean>
+    <!--
+    id：给对象在容器中提供一个唯一标识。用于获取对象。
+    class：指定类的全限定类名。用于反射创建对象。默认情况下调用无参构造函数。
+    scope：指定对象的作用范围。
+    init-method：指定类中的初始化方法名称。
+    destroy-method：指定类中销毁方法名称。
+    -->
+    <bean id="ac2" class="spring02ioc.factory.StaticFactory" factory-method="crAS"></bean>
+
+    <!-- 第二种此种方式是:
+        使用 StaticFactory 类中的静态方法 createAccountService 创建对象，并存入 spring 容器
+        id 属性：指定 bean 的 id，用于从容器中获取
+        class 属性：指定静态工厂的全限定类名
+        factory-method 属性：指定生产对象的静态方法
+        -->
+
+    <!-- 第三种此种方式是：
+先把工厂的创建交给 spring 来管理。
+然后在使用工厂的 bean 来调用里面的方法
+factory-bean 属性：用于指定实例工厂 bean 的 id。
+factory-method 属性：用于指定实例工厂中创建对象的方法。
+-->
+
+    <bean id="asFactory" class="spring02ioc.factory.InstanceFactory"></bean>
+    <bean id="accountService1"
+          factory-method="createAS"
+          factory-bean="asFactory"></bean>
+</beans>
