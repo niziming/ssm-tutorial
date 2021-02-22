@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/mvc
+ http://www.springframework.org/schema/mvc/spring-mvc.xsd
+ http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 配置创建 spring 容器要扫描的包 -->
+    <!--<context:annotation-config/>-->
+    <context:component-scan base-package="ziming"/>
+    <mvc:annotation-driven/>
+
+    <!--在 SpringMVC 的各个组件中，处理器映射器、处理器适配器、视图解析器称为 SpringMVC 的三大组件。-->
+    <!--使 用 <mvc:annotation-driven> 自动加载 RequestMappingHandlerMapping （处理映射器） 和-->
+    <!--RequestMappingHandlerAdapter （ 处 理 适 配 器 ） ， 可 用 在 SpringMVC.xml 配 置 文 件 中 使 用-->
+    <!--<mvc:annotation-driven>替代注解处理器和适配器的配置。-->
+    <!--    它就相当于在 xml 中配置了：-->
+    <!-- 上面的标签相当于 如下配置-->
+    <!-- Begin -->
+    <!-- HandlerMapping -->
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>-->
+    <!--<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>-->
+    <!--&lt;!&ndash; HandlerAdapter &ndash;&gt;-->
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>-->
+    <!--<bean class="org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter"/>-->
+    <!--<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>-->
+    <!--&lt;!&ndash; HadnlerExceptionResolvers &ndash;&gt;-->
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver"/>-->
+    <!--<bean class="org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver"/>-->
+    <!--<bean class="org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver"/>-->
+    <!--&lt;!&ndash; End &ndash;&gt;-->
+
+    <!--<mvc:default-servlet-handler />-->
+    <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
+    <!--<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />-->
+    <!-- 配置视图解析器 -->
+
+    <!--在 springmvc 的配置文件中可以配置，静态资源不过滤：-->
+    <!-- location 表示路径，mapping 表示文件，**表示该目录下的文件以及子目录的文件 -->
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/images/" mapping="/images/**"/>
+    <mvc:resources location="/scripts/" mapping="/javascript/**"/>
+
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+</beans>
