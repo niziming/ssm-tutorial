@@ -1,6 +1,5 @@
 package cn.zm.mapper;
 
-import cn.zm.domain.Student;
 import cn.zm.util.MybatisUtils;
 import cn.zm.util.MybatisUtilsTest;
 import org.apache.ibatis.session.SqlSession;
@@ -15,11 +14,15 @@ public class StudentMapperTest {
 
     @Test
     public void getAll() {
-        SqlSession session = null;
-        session = MybatisUtils.getSession();
+        SqlSession session = MybatisUtils.getSession();
         StudentMapper mapper = session.getMapper(StudentMapper.class);
+        //查询注解的
         System.out.println(mapper.getAll());
-        System.out.println(mapper.StudentTeacher());
+        //查询xml
+        //System.out.println(mapper.getStu());
+        //联表查询
+        //System.out.println(mapper.getStudents());
+        System.out.println(mapper.getStudents2());
         session.close();
     }
 }

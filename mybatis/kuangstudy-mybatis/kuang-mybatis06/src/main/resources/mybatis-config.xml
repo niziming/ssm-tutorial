@@ -52,10 +52,12 @@
     </environments>
     <!--注册mapper 每一个mapper都需要注册-->
     <mappers>
+        <!--扫描包下面的全部-->
+        <package name="cn.zm.mapper"/>
         <!--绑定接口-->
-        <mapper class="cn.zm.mapper.StudentMapper"/>
-        <mapper class="cn.zm.mapper.TeacherMapper"/>
-        <!--<mapper class="cn.zm.mapper.**"/>-->
+        <!--<mapper class="cn.zm.mapper.StudentMapper"/>-->
+        <!--<mapper class="cn.zm.mapper.TeacherMapper"/>-->
+        <!--<mapper resource="cn/zm/mapper/StudentMapper.xml"/>-->
     </mappers>
 
     <!--configuration（配置）-->

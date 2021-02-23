@@ -7,5 +7,5 @@ public class Student {
     private Integer id;
     private String name;
     //多对一
-    private Teacher teacher;
+    private Integer tid;
 }

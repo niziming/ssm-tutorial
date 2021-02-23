@@ -38,7 +38,7 @@
     </environments>
     <!--注册mapper 每一个mapper都需要注册-->
     <mappers>
-        <mapper resource="cn/zm/dao/UserMapper.xml"/>
+        <mapper resource="cn/zm/mapper/UserMapper.xml"/>
     </mappers>
 
     <!--configuration（配置）-->

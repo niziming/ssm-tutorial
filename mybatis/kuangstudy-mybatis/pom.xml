@@ -18,6 +18,7 @@
         <module>kuang-mybatis04</module>
         <module>kuang-mybatis05</module>
         <module>kuang-mybatis06</module>
+        <module>kuang-mybatis07</module>
     </modules>
 
     <properties>
