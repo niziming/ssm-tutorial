@@ -17,6 +17,7 @@
         <module>kuang-mybatis03</module>
         <module>kuang-mybatis04</module>
         <module>kuang-mybatis05</module>
+        <module>kuang-mybatis06</module>
     </modules>
 
     <properties>
@@ -25,6 +26,12 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.10</version>
+        </dependency>
         <!--mybaties-->
         <dependency>
             <groupId>org.mybatis</groupId>

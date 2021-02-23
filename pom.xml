@@ -65,11 +65,16 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>3.7.0</version>
                 <configuration>
+                    <release>9</release>
                     <source>1.9</source>
                     <target>1.9</target>
                     <encoding>UTF-8</encoding>
+                    <compilerArgs>
+                        <arg>--add-modules</arg>
+                        <arg>java.xml.ws.annotation</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
         </plugins>

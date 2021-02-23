@@ -23,9 +23,12 @@ public class MybatisUtils {
             System.out.println(e.getMessage());
         }
     }
-
-    public static SqlSession getSessin () {
-        return sqlSessionFactory.openSession();
+    //事务自动提交
+    public static SqlSession getSession () {
+        return getSession(true);
+    }
+    public static SqlSession getSession (boolean flag) {
+        return sqlSessionFactory.openSession(flag);
     }
 
 }
